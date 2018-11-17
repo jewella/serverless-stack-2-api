@@ -115,7 +115,7 @@ functions:
           cors: true
           authorizer: aws_iam
 # Create our resources with separate CloudFormation templates
-resource:
+resources:
   # DynamoDB
   - ${file(resources/dynamodb-table.yml)}
   # S3
